@@ -1,0 +1,86 @@
+
+{  
+	   "ADHERENCE":"0",
+	   "BLOCKID":"89",
+	   "BLOCK_ABBR":"12-3",
+	   "DIRECTION":"Southbound",
+	   "LATITUDE":"33.7907773",
+	   "LONGITUDE":"-84.4432624",
+	   "MSGTIME":"4\/10\/2017 7:46:47 PM",
+	   "ROUTE":"12",
+	   "STOPID":"904800",
+	   "TIMEPOINT":"Midtown Station",
+	   "TRIPID":"5444050",
+	   "VEHICLE":"1465"
+	}
+
+/**
+ This is a sample of the data the API sends back at one time, if you want dynamic or current Transit date use the google apis(Geocoding, Geometry,  API, ) key and use it instead
+ 
+ 
+ 
+ 			Sample request  in postman
+			 https://maps.googleapis.com/maps/api/distancematrix/
+			json?units=imperial&origins=33.7760866,-84.2989257&
+			destinations=33.7648431,-84.31070819999999&key=XXX
+			
+			Sample response:
+			{
+		    "destination_addresses": [
+		        "16 East Lake Dr, Decatur, GA 30030, USA"
+		    ],
+		    "origin_addresses": [
+		        "201 W Ponce de Leon Ave, Decatur, GA 30030, USA"
+		    ],
+		    "rows": [
+		        {
+		            "elements": [
+		                {
+		                    "distance": {
+		                        "text": "1.2 mi",
+		                        "value": 1953
+		                    },
+		                    "duration": {
+		                        "text": "5 mins",
+		                        "value": 289
+		                    },
+		                    "status": "OK"
+		                }
+		            ]
+		        }
+		    ],
+		    "status": "OK"
+		}
+
+
+
+Google maps Geocoding API Sample Response
+{
+    "results": [
+        {
+            ...
+            "formatted_address": "411 Woody Hayes Dr, Columbus, OH 43210, USA",
+            "geometry": {
+                "location": {
+                    "lat": 40.0016447,
+                    "lng": -83.0197266
+                },
+                "location_type": "ROOFTOP",
+                "viewport": {
+                    "northeast": {
+                        "lat": 40.0029936802915,
+                        "lng": -83.01837761970849
+                    },
+                    "southwest": {
+                        "lat": 40.0002957197085,
+                        "lng": -83.02107558029151
+                    }
+                }
+            },
+            ...
+            ]
+        }
+    ],
+}
+
+ */ 
